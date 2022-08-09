@@ -23,33 +23,30 @@ export default function Modal({ setShowModal }) {
               <form action="#">
                 <div className="flex w-full flex-col gap-4">
                   <Select className=" outline-none  border-0 mb-[16px] bg-[#F8F8F8] p-[12px] rounded-[5px]" label="Select Version">
-                    <Option>Material Tailwind HTML</Option>
-                    <Option>Material Tailwind React</Option>
-                    <Option>Material Tailwind Vue</Option>
-                    <Option>Material Tailwind Angular</Option>
-                    <Option>Material Tailwind Svelte</Option>
+                    <Option className="my-[12px] bg-[#f8f8f8]">Sinemates Pro 2.0</Option>
+                    <Option className="my-[12px] bg-[#f8f8f8]">Filter 5</Option>
+                    <Option className="my-[12px] bg-[#f8f8f8]">Multi Express</Option>
+                    <Option className="my-[12px] bg-[#f8f8f8]">Best One</Option>
+                    <Option className="my-[12px] bg-[#f8f8f8]">Multi Express</Option>
+                    <Option className="my-[12px] bg-[#f8f8f8]">Best One</Option>
                   </Select>
                   <div className="text-center text-[16px] text-[#9E9E9E]">OR</div>
                   <Select className=" outline-none border-0 mb-[16px] bg-[#F8F8F8] p-[12px] rounded-[5px]" label="Select Type">
-                    <Option>Material Tailwind HTML</Option>
-                    <Option>Material Tailwind React</Option>
-                    <Option>Material Tailwind Vue</Option>
-                    <Option>Material Tailwind Angular</Option>
-                    <Option>Material Tailwind Svelte</Option>
+                    <Option className="my-[12px] bg-[#f8f8f8]">Simple Delivery</Option>
+                    <Option className="my-[12px] bg-[#f8f8f8]">Advanced Delivery</Option>
                   </Select>
                   <Select className=" outline-none border-0 mb-[16px] bg-[#F8F8F8] p-[12px] rounded-[5px]" label="Select Transportation Type">
-                    <Option>Material Tailwind HTML</Option>
-                    <Option>Material Tailwind React</Option>
-                    <Option>Material Tailwind Vue</Option>
-                    <Option>Material Tailwind Angular</Option>
-                    <Option>Material Tailwind Svelte</Option>
+                    <Option className="my-[12px] bg-[#f8f8f8]">Furniture 2 Moving</Option>
+                    <Option className="my-[12px] bg-[#f8f8f8]">Furniture 2 Moving</Option>
+                    <Option className="my-[12px] bg-[#f8f8f8]">Furniture 2 Moving</Option>
+                    <Option className="my-[12px] bg-[#f8f8f8]">Furniture 2 Moving</Option>
+                    <Option className="my-[12px] bg-[#f8f8f8]">Furniture 2 Moving</Option>
+                    <Option className="my-[12px] bg-[#f8f8f8]">Furniture 2 Moving</Option>
                   </Select>
                   <Select className=" outline-none border-0 mb-[16px] bg-[#F8F8F8] p-[12px] rounded-[5px]" label="Select City">
-                    <Option>Material Tailwind HTML</Option>
-                    <Option>Material Tailwind React</Option>
-                    <Option>Material Tailwind Vue</Option>
-                    <Option>Material Tailwind Angular</Option>
-                    <Option>Material Tailwind Svelte</Option>
+                    <Option className="my-[12px] bg-[#f8f8f8]">Copenhagan</Option>
+                    <Option className="my-[12px] bg-[#f8f8f8]">Dhaka</Option>
+                    <Option className="my-[12px] bg-[#f8f8f8]">Delhi</Option>
                   </Select>
                 </div>
 

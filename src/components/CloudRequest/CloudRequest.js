@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { BsFillFilterSquareFill } from "react-icons/bs";
-import { AiOutlineReload } from "react-icons/ai";
+import { AiOutlineReload, AiOutlineSearch } from "react-icons/ai";
 import Modal from "../../shared/Modal/Modal";
+import filter from "../../filter.jpg";
 
 const CloudRequest = () => {
   const [showModal, setShowModal] = useState(false);
@@ -19,9 +19,18 @@ const CloudRequest = () => {
           <section className="flex">
             <div className="w-[375px]  h-[774px] mr-[30px] p-[20px] rounded-[10px] bg-white">
               <div className="flex items-center justify-between">
-                <input className="w-[285px] bg-[#F8F8F8] p-[12px] rounded-[5px]" type="text" placeholder="Search..." />
-                <button className="w-[30px] text-[28px] h-[30px]">
-                  <BsFillFilterSquareFill />
+                <div class="relative flex w-full flex-wrap items-stretch mb-3">
+                  <input
+                    type="text"
+                    placeholder="Search..."
+                    class="w-[285px] bg-[#F8F8F8] p-[12px] rounded-[5px] px-3 py-3 placeholder-slate-300 text-slate-600 relative  text-sm border-0  outline-none focus:outline-none focus:ring pr-10"
+                  />
+                  <span class="z-10 text-[20px] h-full leading-snug font-semibold absolute rounded text-base items-center justify-center w-8 right-0 pr-3 py-3">
+                    <AiOutlineSearch />
+                  </span>
+                </div>
+                <button className="w-[45px] h-[45px] -mt-[15px]">
+                  <img className="w-[45px] h-[45px]" src={filter} alt="" />
                 </button>
               </div>
             </div>
