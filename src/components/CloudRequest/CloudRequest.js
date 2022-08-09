@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { AiOutlineReload, AiOutlineSearch } from "react-icons/ai";
+import { AiOutlineReload } from "react-icons/ai";
+import { FiSearch } from "react-icons/fi";
 import Modal from "../../shared/Modal/Modal";
 import filter from "../../filter.jpg";
 
@@ -26,7 +27,7 @@ const CloudRequest = () => {
                     class="w-[285px] bg-[#F8F8F8] p-[12px] rounded-[5px] px-3 py-3 placeholder-slate-300 text-slate-600 relative  text-sm border-0  outline-none focus:outline-none focus:ring pr-10"
                   />
                   <span class="z-10 text-[20px] h-full leading-snug font-semibold absolute rounded text-base items-center justify-center w-8 right-0 pr-3 py-3">
-                    <AiOutlineSearch />
+                    <FiSearch />
                   </span>
                 </div>
                 <button className="w-[45px] h-[45px] -mt-[15px]">
