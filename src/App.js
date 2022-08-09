@@ -1,9 +1,20 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import CloudRequest from "./components/CloudRequest/CloudRequest";
+
+import Home from "./components/Home/Home";
+import Login from "./shared/Login/Login";
+
 function App() {
   return (
-    <main className="App bg-red-300 text-black text-3xl">
-      <nav>
-        <h1> Welcome To Home</h1>
-      </nav>
+    <main>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/cloud" element={<CloudRequest />} />
+        </Routes>
+      </Router>
     </main>
   );
 }
