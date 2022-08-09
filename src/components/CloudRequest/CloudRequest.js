@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsFillFilterSquareFill } from "react-icons/bs";
 import { AiOutlineReload } from "react-icons/ai";
+import Modal from "../../shared/Modal/Modal";
 
 const CloudRequest = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <React.Fragment>
       <div className="bg-[#F4F4F4] w-full h-screen pt-[30px]">
@@ -26,9 +28,10 @@ const CloudRequest = () => {
             <div className="w-[835px] h-[774px] p-[12px] rounded-[10px] flex items-center justify-center bg-white">
               <div className="text-center">
                 <h3 className="text-[18px] leading-[27px] text-[#9E9E9E] mb-[30px]">
-                  You don’t have any favorite filter. Pleaes create a filter first.
+                  You don’t have any favorite filter. Please create a filter first.
                 </h3>
-                <button type="submit" className=" bg-[#47A7FF] text-white px-[40px] py-[12px] rounded-[5px]">
+
+                <button onClick={() => setShowModal(true)} type="submit" className=" bg-[#47A7FF] text-white px-[40px] py-[12px] rounded-[5px]">
                   Create Favorite Filter
                 </button>
               </div>
@@ -36,6 +39,7 @@ const CloudRequest = () => {
           </section>
         </div>
       </div>
+      {showModal ? <Modal setShowModal={setShowModal} /> : null}
     </React.Fragment>
   );
 };
