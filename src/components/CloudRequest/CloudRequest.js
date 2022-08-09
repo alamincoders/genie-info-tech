@@ -20,13 +20,13 @@ const CloudRequest = () => {
           <section className="flex">
             <div className="w-[375px]  h-[774px] mr-[30px] p-[20px] rounded-[10px] bg-white">
               <div className="flex items-center justify-between">
-                <div class="relative flex w-full flex-wrap items-stretch mb-3">
+                <div className="relative flex w-full flex-wrap items-stretch mb-3">
                   <input
                     type="text"
                     placeholder="Search..."
-                    class="w-[285px] bg-[#F8F8F8] p-[12px] rounded-[5px] px-3 py-3 placeholder-slate-300 text-slate-600 relative  text-sm border-0  outline-none focus:outline-none focus:ring pr-10"
+                    className="w-[285px] bg-[#F8F8F8] p-[12px] rounded-[5px] px-3 py-3 placeholder-slate-300 text-slate-600 relative  text-sm border-0  outline-none focus:outline-none focus:ring pr-10"
                   />
-                  <span class="z-10 text-[20px] h-full leading-snug font-semibold absolute rounded text-base items-center justify-center w-8 right-0 pr-3 py-3">
+                  <span className="z-10 text-[20px] h-full leading-snug font-semibold absolute rounded text-base items-center justify-center w-8 right-0 pr-3 py-3">
                     <FiSearch />
                   </span>
                 </div>
